@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #555;
+        }
+        #carousel{
+            border: dotted 1px black;
+            width: 80%;
+            margin: auto;
+            padding-top: 10%;
+        }
+        .slide{
+            float: left;
+        }
+        .slide:first-child{
+            width: 30%;
+            text-align: right;
+            padding-top:4%;
+            
+        }
+        .slide:last-child{
+            width: 30%;
+            text-align: left;
+            padding-top: 4%;
+          
+        }
+        .slide:nth-child(2){
+            width: 40%;
+            
+        }
+        img{
+            
+        }
+        .img-first:first-child{
+            width: 80%;
+            transform: translateX(20%);
+             box-shadow: 0 0 0 2px rgb(236, 212, 212);
+             border-radius: 3px;
+        
+        }
+        .img-last:last-child{
+            width: 80%;
+            transform: translateX(-20%);
+            position: relative;
+            z-index: -1;
+            box-shadow: 0 0 0 2px rgb(236, 212, 212);
+            border-radius: 3px;
+        }
+        .center{
+            width: 100%;
+            transform: translateX(0%);
+            box-shadow:  0 0 5px 0 rgb(236, 212, 212); 
+            border-radius: 3px;
+        }
+        .indicators{
+            padding-top: 20%;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            padding: 5px;
+
+        }
+        a:hover{
+            color: burlywood;
+        }
+            
+        
+
+    </style>
+</head>
+<body>
+    <div id="carousel">
+        <div class="slides" >
+        <div class="slide">
+            <img class="img-first" src="../Layered-carousel/images/1.jpg" >
+        </div>
+        <div class="slide">
+            <img class="center" src="./images/2.jpg" >
+        </div>
+        <div class="slide">
+            <img class="img-last" src="./images/3.jpg" >
+        </div>
+        </div>
+    </div>
+    <div class="indicators">
+        <a href="">&#9673;</a>
+        <a href="">&#9673;</a>
+        <a href="">&#9673;</a>
+
+    </div>
+    
+    
+</body>
+</html>
